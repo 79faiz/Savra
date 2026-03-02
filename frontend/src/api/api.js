@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://localhost:5000"
+  baseURL: "https://savra-yfs7.onrender.com"
 });
