@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.glass-card {
+  @apply bg-white/10 backdrop-blur-xl border border-white/20 
+         shadow-xl rounded-3xl p-6 text-white;
+}
+/* Force dropdown options visible */
+select option {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.2s ease-out;
+}
